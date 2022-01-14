@@ -1,16 +1,16 @@
-import { Form } from "./components/Form"
-import { Header } from "./components/Header"
-import { ListClient } from "./components/ListClient"
+import { Form } from "./components/Formulario/Form"
+import { Header } from "./components/Header/Header"
+import { ListClient } from "./components/Listado de Pacientes/ListClient"
 
 const App = () => {
   return (
     <div className="container mx-auto p-2">
       <Header />
       
-      <div className="mt-14 md:flex flex-row justify-center items-center">
+      <main className="mt-14 md:flex flex-row justify-center items-center">
         <Form />
         <ListClient />
-      </div>
+      </main>
 
     </div>
   )

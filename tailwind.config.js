@@ -5,6 +5,9 @@ module.exports = {
     fontFamily: {
       poppins: ['Poppins'],
     },
+    gridTemplateCols: {
+      card: 'repeat(2, minmax(275px, auto))'
+    }
   },
   plugins: [],
 }

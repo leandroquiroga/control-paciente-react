@@ -1,23 +1,10 @@
-
-import React from 'react'
-import { useForm } from './../../hooks/useForm';
+import React from 'react';
 import { Forumulario } from './components/Forumulario';
-import { Title } from './components/Title';
+import { Title } from './components/Title'; 
 
-export const Form = () => {
-
-    const [formValue, handdleChangeInput] = useForm({
-        nameMascota: '',
-        namePropietario: '',
-        email: '',
-        dateAlta: '',
-        sintomas: '',
-    });
-
-    // const { nameMascota, namePropietario, email, dateAlta, sintomas } = formValue;
-     
+export const Form = ({arrClients, setArrClients,client ,setClient}) => {
     return (
-        <section className='flex flex-col justify-center items-center lg:w-2/5 md:w-1/2 font-poppins'>
+        <section className='flex flex-col justify-center items-center lg:w-3/5 md:w-full font-poppins'>
 
             <Title 
                 titleText='Control de Pacientes'
@@ -26,8 +13,10 @@ export const Form = () => {
             />
 
             <Forumulario
-                handdleChangeInput={handdleChangeInput}
-                formValue={formValue}
+                arrClients={arrClients}
+                setArrClients={setArrClients}
+                client={client}
+                setClient={setClient}
             />
         </section>
     );

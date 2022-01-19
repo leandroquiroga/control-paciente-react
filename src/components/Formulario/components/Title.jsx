@@ -4,7 +4,7 @@ export const Title = (props) => {
  
     const { titleText, subtitleText, spanText} = props;
     return (
-        <article>
+        <article className='my-5'>
             <h2 className='text-xl font-semibold text-center'>{ titleText }</h2>
             <p className='text-lg my-3 text-center'>
                 { subtitleText } y {''}
